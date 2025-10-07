@@ -1,0 +1,28 @@
+﻿<Window x:Class="DatabaseDesktopClient.Views.RowEditDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редагувати рядок"
+        Width="500" Height="600"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Поля -->
+        <ScrollViewer Grid.Row="0" x:Name="FieldsScrollViewer" VerticalScrollBarVisibility="Auto" Padding="20">
+            <StackPanel/>
+        </ScrollViewer>
+
+        <!-- Кнопки -->
+        <Border Grid.Row="1" Background="White" BorderBrush="#E0E0E0" BorderThickness="0,1,0,0" Padding="20,15">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Зберегти" IsDefault="True" Width="120" Height="40" Margin="0,0,10,0" Click="Save_Click"/>
+                <Button Content="Скасувати" IsCancel="True" Width="100" Height="40" Background="#757575"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
