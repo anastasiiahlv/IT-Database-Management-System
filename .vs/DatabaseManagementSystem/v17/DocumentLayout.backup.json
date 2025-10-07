@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasedesktopclient\\views\\roweditdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|solutionrelative:databasedesktopclient\\views\\roweditdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databaseserver\\dtos\\apidtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|solutionrelative:databaseserver\\dtos\\apidtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasedesktopclient\\viewmodels\\tableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|solutionrelative:databasedesktopclient\\viewmodels\\tableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasedesktopclient\\views\\tableview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|solutionrelative:databasedesktopclient\\views\\tableview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasedesktopclient\\views\\roweditdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|solutionrelative:databasedesktopclient\\views\\roweditdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasedesktopclient\\views\\tableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|solutionrelative:databasedesktopclient\\views\\tableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasedesktopclient\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{00464B47-F123-4538-8ED4-D7979AC6DA50}|DatabaseDesktopClient\\DatabaseDesktopClient.csproj|solutionrelative:databasedesktopclient\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databaseserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|solutionrelative:databaseserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,77 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TableViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\ViewModels\\TableViewModel.cs",
-              "RelativeDocumentMoniker": "DatabaseDesktopClient\\ViewModels\\TableViewModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\ViewModels\\TableViewModel.cs",
-              "RelativeToolTip": "DatabaseDesktopClient\\ViewModels\\TableViewModel.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAowHwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T18:15:18.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RowEditDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\RowEditDialog.xaml",
-              "RelativeDocumentMoniker": "DatabaseDesktopClient\\Views\\RowEditDialog.xaml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\RowEditDialog.xaml",
-              "RelativeToolTip": "DatabaseDesktopClient\\Views\\RowEditDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-07T18:10:04.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RowEditDialog.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\RowEditDialog.xaml.cs",
-              "RelativeDocumentMoniker": "DatabaseDesktopClient\\Views\\RowEditDialog.xaml.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\RowEditDialog.xaml.cs",
-              "RelativeToolTip": "DatabaseDesktopClient\\Views\\RowEditDialog.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Title": "ApiDtos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\DTOs\\ApiDtos.cs",
+              "RelativeDocumentMoniker": "DatabaseServer\\DTOs\\ApiDtos.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\DTOs\\ApiDtos.cs",
+              "RelativeToolTip": "DatabaseServer\\DTOs\\ApiDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T18:09:39.043Z",
+              "WhenOpened": "2025-10-07T19:36:57.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TableView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\TableView.xaml.cs",
-              "RelativeDocumentMoniker": "DatabaseDesktopClient\\Views\\TableView.xaml.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\TableView.xaml.cs",
-              "RelativeToolTip": "DatabaseDesktopClient\\Views\\TableView.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\Program.cs",
+              "RelativeDocumentMoniker": "DatabaseServer\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\Program.cs",
+              "RelativeToolTip": "DatabaseServer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T18:09:10.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TableView.xaml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\TableView.xaml",
-              "RelativeDocumentMoniker": "DatabaseDesktopClient\\Views\\TableView.xaml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\Views\\TableView.xaml",
-              "RelativeToolTip": "DatabaseDesktopClient\\Views\\TableView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-07T18:08:45.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\App.xaml",
-              "RelativeDocumentMoniker": "DatabaseDesktopClient\\App.xaml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseDesktopClient\\App.xaml",
-              "RelativeToolTip": "DatabaseDesktopClient\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-03T20:18:46.282Z",
+              "WhenOpened": "2025-10-07T19:31:19.14Z",
               "EditorCaption": ""
             }
           ]

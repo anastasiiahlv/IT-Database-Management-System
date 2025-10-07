@@ -36,3 +36,4 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\r
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.pdb
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.genruntimeconfig.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\ref\DatabaseServer.dll
+C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.sourcelink.json

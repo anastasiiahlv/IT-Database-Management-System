@@ -48,3 +48,4 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseDesktopClient\obj\Debug\n
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseDesktopClient\obj\Debug\net8.0-windows\Views\TableView.baml
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseDesktopClient\obj\Debug\net8.0-windows\Views\DatabaseView.g.cs
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseDesktopClient\obj\Debug\net8.0-windows\Views\TableView.g.cs
+C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseDesktopClient\obj\Debug\net8.0-windows\DatabaseDesktopClient.sourcelink.json

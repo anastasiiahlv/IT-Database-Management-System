@@ -106,3 +106,4 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.pdb
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.genruntimeconfig.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\ref\DatabaseCore.Tests.dll
+C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.sourcelink.json
