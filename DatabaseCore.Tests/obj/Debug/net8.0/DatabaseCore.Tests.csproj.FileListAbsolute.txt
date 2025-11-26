@@ -100,10 +100,10 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.AssemblyInfoInputs.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.AssemblyInfo.cs
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.sourcelink.json
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\Database.23D5B7C3.Up2Date
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.dll
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\refint\DatabaseCore.Tests.dll
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.pdb
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.genruntimeconfig.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\ref\DatabaseCore.Tests.dll
-C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore.Tests\obj\Debug\net8.0\DatabaseCore.Tests.sourcelink.json

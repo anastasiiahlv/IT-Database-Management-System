@@ -5,8 +5,8 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\Dat
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.AssemblyInfoInputs.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.AssemblyInfo.cs
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.sourcelink.json
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.dll
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\refint\DatabaseCore.dll
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.pdb
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\ref\DatabaseCore.dll
-C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseCore\obj\Debug\net8.0\DatabaseCore.sourcelink.json

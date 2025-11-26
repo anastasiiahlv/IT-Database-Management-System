@@ -1,0 +1,640 @@
+{
+  "Version": 1,
+  "Hash": "qEHWRI1/nvAohNJZTpV75KtciTew8cL1wfpxYWuz0ZY=",
+  "Source": "DatabaseManagementSystem.BlazorUI",
+  "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DatabaseManagementSystem.BlazorUI\\wwwroot",
+      "Source": "DatabaseManagementSystem.BlazorUI",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DatabaseManagementSystem.BlazorUI.styles.css",
+      "SourceId": "DatabaseManagementSystem.BlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "RelativePath": "DatabaseManagementSystem.BlazorUI#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "eiwp37b5p5",
+      "Integrity": "KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DatabaseManagementSystem.BlazorUI.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DatabaseManagementSystem.BlazorUI.bundle.scp.css",
+      "SourceId": "DatabaseManagementSystem.BlazorUI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "RelativePath": "DatabaseManagementSystem.BlazorUI#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "eiwp37b5p5",
+      "Integrity": "KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DatabaseManagementSystem.BlazorUI.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\app.css",
+      "SourceId": "DatabaseManagementSystem.BlazorUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ea9zskxabu",
+      "Integrity": "OurBOFTQrjyNwDm+5azBpb2QSeWddk2c3s1zGMLq0W0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "SourceId": "DatabaseManagementSystem.BlazorUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "RelativePath": "bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bpk8xqwxhs",
+      "Integrity": "z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "DatabaseManagementSystem.BlazorUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "RelativePath": "bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\favicon.png",
+      "SourceId": "DatabaseManagementSystem.BlazorUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\",
+      "BasePath": "_content/DatabaseManagementSystem.BlazorUI",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OurBOFTQrjyNwDm+5azBpb2QSeWddk2c3s1zGMLq0W0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 19:48:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OurBOFTQrjyNwDm+5azBpb2QSeWddk2c3s1zGMLq0W0="
+        }
+      ]
+    },
+    {
+      "Route": "app.ea9zskxabu.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OurBOFTQrjyNwDm+5azBpb2QSeWddk2c3s1zGMLq0W0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 19:48:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ea9zskxabu"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OurBOFTQrjyNwDm+5azBpb2QSeWddk2c3s1zGMLq0W0="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.bpk8xqwxhs.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Oct 2025 20:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bpk8xqwxhs"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Oct 2025 20:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Oct 2025 20:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Oct 2025 20:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "DatabaseManagementSystem.BlazorUI.bundle.scp.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DatabaseManagementSystem.BlazorUI.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 19:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE="
+        }
+      ]
+    },
+    {
+      "Route": "DatabaseManagementSystem.BlazorUI.eiwp37b5p5.bundle.scp.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DatabaseManagementSystem.BlazorUI.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 19:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eiwp37b5p5"
+        },
+        {
+          "Name": "label",
+          "Value": "DatabaseManagementSystem.BlazorUI.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE="
+        }
+      ]
+    },
+    {
+      "Route": "DatabaseManagementSystem.BlazorUI.eiwp37b5p5.styles.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DatabaseManagementSystem.BlazorUI.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 19:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eiwp37b5p5"
+        },
+        {
+          "Name": "label",
+          "Value": "DatabaseManagementSystem.BlazorUI.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE="
+        }
+      ]
+    },
+    {
+      "Route": "DatabaseManagementSystem.BlazorUI.styles.css",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DatabaseManagementSystem.BlazorUI.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 19:49:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KkA8JanYifKjslI2Hqxkysno4mJ+BELYSALsrDTIoFE="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ifv42okdf2.png",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Oct 2025 20:30:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ifv42okdf2"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Oct 2025 20:30:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    }
+  ]
+}

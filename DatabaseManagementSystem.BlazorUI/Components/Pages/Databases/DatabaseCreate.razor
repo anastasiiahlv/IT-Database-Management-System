@@ -1,0 +1,91 @@
+﻿@* Components/Pages/Databases/DatabaseCreate.razor *@
+@page "/databases/create"
+@using DatabaseManagementSystem.BlazorUI.Models
+@using DatabaseManagementSystem.BlazorUI.Services
+@using System.ComponentModel.DataAnnotations;
+@inject IDatabaseService DatabaseService
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<PageTitle>Create Database</PageTitle>
+
+<h1>Create New Database</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <EditForm Model="@model" OnValidSubmit="@HandleSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Database Name</label>
+                <InputText id="name" class="form-control" @bind-Value="model.Name" placeholder="Enter database name" />
+                <ValidationMessage For="@(() => model.Name)" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" disabled="@isSubmitting">
+                    @if (isSubmitting)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                    }
+                    Create Database
+                </button>
+                <button type="button" class="btn btn-secondary ms-2" @onclick="Cancel">Cancel</button>
+            </div>
+        </EditForm>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger">@errorMessage</div>
+        }
+    </div>
+</div>
+
+@code {
+    private CreateDatabaseModel model = new();
+    private bool isSubmitting = false;
+    private string errorMessage = string.Empty;
+
+    private async Task HandleSubmit()
+    {
+        isSubmitting = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var request = new CreateDatabaseRequest { Name = model.Name };
+            var response = await DatabaseService.CreateDatabaseAsync(request);
+
+            if (response.Success)
+            {
+                Navigation.NavigateTo("/databases");
+            }
+            else
+            {
+                errorMessage = response.Message ?? "Failed to create database";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/databases");
+    }
+
+    private class CreateDatabaseModel
+    {
+        [Required(ErrorMessage = "Database name is required")]
+        [StringLength(100, MinimumLength = 1, ErrorMessage = "Database name must be between 1 and 100 characters")]
+        [RegularExpression(@"^[a-zA-Z0-9_]+$", ErrorMessage = "Database name can only contain letters, numbers, and underscores")]
+        public string Name { get; set; } = string.Empty;
+    }
+}

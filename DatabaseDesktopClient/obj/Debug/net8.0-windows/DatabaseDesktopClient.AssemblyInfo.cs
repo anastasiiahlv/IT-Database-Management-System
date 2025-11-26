@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DatabaseDesktopClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a04ff1bb527fad8676d76af0426b518a82b1cc50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e24420d3ad1c095a6523d2c958abe55151410163")]
 [assembly: System.Reflection.AssemblyProductAttribute("DatabaseDesktopClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DatabaseDesktopClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

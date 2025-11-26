@@ -19,6 +19,7 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\D
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.sourcelink.json
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\scopedcss\bundle\DatabaseServer.styles.css
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\staticwebassets.development.json
@@ -36,4 +37,3 @@ C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\r
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.pdb
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.genruntimeconfig.cache
 C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\ref\DatabaseServer.dll
-C:\Users\USER\Desktop\DatabaseManagementSystem\DatabaseServer\obj\Debug\net8.0\DatabaseServer.sourcelink.json

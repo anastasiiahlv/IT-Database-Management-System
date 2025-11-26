@@ -1,0 +1,293 @@
+﻿@* Components/Pages/Tables/TableCreate.razor *@
+@page "/databases/{DatabaseName}/tables/create"
+@using DatabaseManagementSystem.BlazorUI.Models
+@using DatabaseManagementSystem.BlazorUI.Services
+@using System.ComponentModel.DataAnnotations;
+@inject ITableService TableService
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
+<PageTitle>Create Table - @DatabaseName</PageTitle>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/databases">Databases</a></li>
+        <li class="breadcrumb-item"><a href="/databases/@DatabaseName/tables">@DatabaseName</a></li>
+        <li class="breadcrumb-item active">Create Table</li>
+    </ol>
+</nav>
+
+<h1>Create New Table</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <EditForm Model="@model" OnValidSubmit="@HandleSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+
+            <div class="mb-3">
+                <label for="tableName" class="form-label">Table Name</label>
+                <InputText id="tableName" class="form-control" @bind-Value="model.TableName" placeholder="Enter table name" />
+                <ValidationMessage For="@(() => model.TableName)" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <h5>Columns</h5>
+                @if (!model.Columns.Any())
+                {
+                    <div class="alert alert-warning">
+                        Please add at least one column to the table.
+                    </div>
+                }
+                else
+                {
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Data Type</th>
+                                <th>Nullable</th>
+                                <th>Default Value</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var column in model.Columns)
+                            {
+                                <tr>
+                                    <td>@column.Name</td>
+                                    <td>@DataTypes.GetDisplayName(column.DataType)</td>
+                                    <td>
+                                        @if (column.IsNullable)
+                                        {
+                                            <span class="badge bg-success">Yes</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">No</span>
+                                        }
+                                    </td>
+                                    <td>@(column.DefaultValue?.ToString() ?? "-")</td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-danger" @onclick="() => RemoveColumn(column)">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+
+                <button type="button" class="btn btn-success" @onclick="ShowAddColumnModal">
+                    <i class="bi bi-plus"></i> Add Column
+                </button>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" disabled="@(isSubmitting || !model.Columns.Any())">
+                    @if (isSubmitting)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                    }
+                    Create Table
+                </button>
+                <button type="button" class="btn btn-secondary ms-2" @onclick="Cancel">Cancel</button>
+            </div>
+        </EditForm>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger">@errorMessage</div>
+        }
+    </div>
+</div>
+
+@* Modal for adding column *@
+@if (showColumnModal)
+{
+    <div class="modal show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Column</h5>
+                    <button type="button" class="btn-close" @onclick="HideAddColumnModal"></button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@newColumn" OnValidSubmit="@AddColumn">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary class="text-danger" />
+
+                        <div class="mb-3">
+                            <label class="form-label">Column Name</label>
+                            <InputText class="form-control" @bind-Value="newColumn.Name" />
+                            <ValidationMessage For="@(() => newColumn.Name)" class="text-danger" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Data Type</label>
+                            <InputSelect class="form-select" @bind-Value="newColumn.DataType">
+                                @foreach (var type in DataTypes.AllTypes)
+                                {
+                                    <option value="@type">@DataTypes.GetDisplayName(type)</option>
+                                }
+                            </InputSelect>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <InputCheckbox class="form-check-input" @bind-Value="newColumn.IsNullable" id="nullable" />
+                                <label class="form-check-label" for="nullable">
+                                    Allow Null Values
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Default Value (optional)</label>
+                            <InputText class="form-control" @bind-Value="defaultValueString"
+                                       placeholder="@GetDefaultValuePlaceholder()" />
+                            <small class="text-muted">@GetDataTypeHint()</small>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" @onclick="HideAddColumnModal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Add Column</button>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public string DatabaseName { get; set; } = string.Empty;
+
+    private CreateTableModel model = new();
+    private ColumnModel newColumn = new();
+    private string defaultValueString = string.Empty;
+    private bool isSubmitting = false;
+    private string errorMessage = string.Empty;
+    private bool showColumnModal = false;
+
+    private async Task HandleSubmit()
+    {
+        isSubmitting = true;
+        errorMessage = string.Empty;
+
+        try
+        {
+            var request = new CreateTableRequest
+                {
+                    DatabaseName = DatabaseName,
+                    TableName = model.TableName,
+                    Columns = model.Columns.Select(c => new ColumnDto
+                    {
+                        Name = c.Name,
+                        DataType = c.DataType,
+                        IsNullable = c.IsNullable,
+                        DefaultValue = c.DefaultValue
+                    }).ToList()
+                };
+
+            var response = await TableService.CreateTableAsync(request);
+
+            if (response.Success)
+            {
+                Navigation.NavigateTo($"/databases/{DatabaseName}/tables");
+            }
+            else
+            {
+                errorMessage = response.Message ?? "Failed to create table";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error: {ex.Message}";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
+    }
+
+    private void ShowAddColumnModal()
+    {
+        newColumn = new ColumnModel();
+        defaultValueString = string.Empty;
+        showColumnModal = true;
+    }
+
+    private void HideAddColumnModal()
+    {
+        showColumnModal = false;
+    }
+
+    private void AddColumn()
+    {
+        if (!string.IsNullOrWhiteSpace(defaultValueString))
+        {
+            newColumn.DefaultValue = DataTypes.ParseValue(newColumn.DataType, defaultValueString);
+        }
+
+        model.Columns.Add(newColumn);
+        HideAddColumnModal();
+    }
+
+    private void RemoveColumn(ColumnModel column)
+    {
+        model.Columns.Remove(column);
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo($"/databases/{DatabaseName}/tables");
+    }
+
+    private string GetDefaultValuePlaceholder()
+    {
+        return newColumn.DataType switch
+        {
+            DataTypes.Integer => "e.g., 0",
+            DataTypes.Real => "e.g., 0.0",
+            DataTypes.Char => "e.g., A",
+            DataTypes.String => "e.g., default text",
+            DataTypes.Money => "e.g., 100.50",
+            DataTypes.MoneyInterval => "e.g., [100.00, 500.00]",
+            _ => ""
+        };
+    }
+
+    private string GetDataTypeHint()
+    {
+        return newColumn.DataType switch
+        {
+            DataTypes.Money => "Max value: $10,000,000,000,000.00",
+            DataTypes.MoneyInterval => "Format: [min, max]",
+            _ => ""
+        };
+    }
+
+    private class CreateTableModel
+    {
+        [Required(ErrorMessage = "Table name is required")]
+        [StringLength(100, MinimumLength = 1, ErrorMessage = "Table name must be between 1 and 100 characters")]
+        [RegularExpression(@"^[a-zA-Z0-9_]+$", ErrorMessage = "Table name can only contain letters, numbers, and underscores")]
+        public string TableName { get; set; } = string.Empty;
+
+        public List<ColumnModel> Columns { get; set; } = new();
+    }
+
+    private class ColumnModel
+    {
+        [Required(ErrorMessage = "Column name is required")]
+        [StringLength(100, MinimumLength = 1)]
+        [RegularExpression(@"^[a-zA-Z0-9_]+$", ErrorMessage = "Column name can only contain letters, numbers, and underscores")]
+        public string Name { get; set; } = string.Empty;
+
+        public string DataType { get; set; } = DataTypes.String;
+        public bool IsNullable { get; set; } = true;
+        public object? DefaultValue { get; set; }
+    }
+}

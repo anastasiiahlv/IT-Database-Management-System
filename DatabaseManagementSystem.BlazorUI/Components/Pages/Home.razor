@@ -1,0 +1,135 @@
+﻿@page "/"
+@using DatabaseManagementSystem.BlazorUI.Services
+@inject IDatabaseService DatabaseService
+@inject NavigationManager Navigation
+
+<PageTitle>Home - Database Management System</PageTitle>
+
+<div class="container-fluid">
+    <h1>Welcome to IT Database Management System</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">System Features</h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><strong>Database Management:</strong> Create and manage multiple databases</li>
+                        <li><strong>Table Operations:</strong> Create tables with custom columns</li>
+                        <li>
+                            <strong>Data Types Support:</strong>
+                            <ul>
+                                <li>Integer</li>
+                                <li>Real</li>
+                                <li>Char</li>
+                                <li>String</li>
+                                <li>Money ($) - up to $10,000,000,000,000.00</li>
+                                <li>Money Interval ($Invl)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Row Management:</strong> Full CRUD operations with validation</li>
+                        <li><strong>Sorting:</strong> Sort tables by any column</li>
+                        <li><strong>Persistence:</strong> Save and load databases from disk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">Quick Stats</h5>
+                </div>
+                <div class="card-body">
+                    @if (isLoading)
+                    {
+                        <div class="text-center">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <p><strong>Total Databases:</strong> @databaseCount</p>
+                        <p><strong>Total Tables:</strong> @tableCount</p>
+                        <p><strong>Total Rows:</strong> @rowCount</p>
+                    }
+
+                    <div class="mt-3">
+                        <button class="btn btn-primary w-100" @onclick="NavigateToDatabases">
+                            <i class="bi bi-database"></i> Go to Databases
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">Getting Started</h5>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Navigate to the <strong>Databases</strong> section</li>
+                        <li>Create a new database with a unique name</li>
+                        <li>Add tables to your database with custom columns</li>
+                        <li>Insert rows into your tables</li>
+                        <li>Use sorting to organize your data</li>
+                        <li>Save your database to disk for persistence</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isLoading = true;
+    private int databaseCount = 0;
+    private int tableCount = 0;
+    private int rowCount = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadStatistics();
+    }
+
+    private async Task LoadStatistics()
+    {
+        isLoading = true;
+
+        try
+        {
+            var databases = await DatabaseService.GetAllDatabasesAsync();
+            databaseCount = databases.Count;
+
+            foreach (var db in databases)
+            {
+                tableCount += db.Tables.Count;
+                foreach (var table in db.Tables)
+                {
+                    rowCount += table.Rows.Count;
+                }
+            }
+        }
+        catch
+        {
+            // Ignore errors for statistics
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void NavigateToDatabases()
+    {
+        Navigation.NavigateTo("/databases");
+    }
+}

@@ -1,0 +1,197 @@
+﻿@page "/databases"
+@using DatabaseManagementSystem.BlazorUI.Models
+@using DatabaseManagementSystem.BlazorUI.Services
+@using System.ComponentModel.DataAnnotations;
+@inject IDatabaseService DatabaseService
+@inject NavigationManager Navigation
+@inject IJSRuntime JS
+@rendermode InteractiveServer
+
+<PageTitle>Databases</PageTitle>
+
+<h1>Database Management</h1>
+
+<div class="row mb-3">
+    <div class="col">
+        <button class="btn btn-primary" @onclick="NavigateToCreate">
+            <i class="bi bi-plus-circle"></i> Create New Database
+        </button>
+        <button class="btn btn-secondary ms-2" @onclick="RefreshDatabases">
+            <i class="bi bi-arrow-clockwise"></i> Refresh
+        </button>
+    </div>
+</div>
+
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (databases == null || !databases.Any())
+{
+    <div class="alert alert-info">
+        No databases found. Create your first database to get started.
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Tables Count</th>
+                    <th>Created At</th>
+                    <th>Modified At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var db in databases)
+                {
+                    <tr>
+                        <td>
+                            <a href="/databases/@db.Name/tables" class="text-decoration-none">
+                                <i class="bi bi-database"></i> @db.Name
+                            </a>
+                        </td>
+                        <td>@db.Tables.Count</td>
+                        <td>@db.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>@(db.ModifiedAt?.ToString("yyyy-MM-dd HH:mm") ?? "-")</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-sm btn-info" @onclick="() => NavigateToTables(db.Name)" title="View Tables">
+                                    <i class="bi bi-table"></i>
+                                </button>
+                                <button class="btn btn-sm btn-success" @onclick="() => SaveDatabase(db.Name)" title="Save to Disk">
+                                    <i class="bi bi-save"></i>
+                                </button>
+                                <button class="btn btn-sm btn-warning" @onclick="() => LoadDatabase(db.Name)" title="Load from Disk">
+                                    <i class="bi bi-folder-open"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" @onclick="() => DeleteDatabase(db.Name)" title="Delete">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+        @errorMessage
+        <button type="button" class="btn-close" @onclick="() => errorMessage = string.Empty"></button>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        @successMessage
+        <button type="button" class="btn-close" @onclick="() => successMessage = string.Empty"></button>
+    </div>
+}
+
+@code {
+    private List<DatabaseDto>? databases;
+    private bool isLoading = true;
+    private string errorMessage = string.Empty;
+    private string successMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadDatabases();
+    }
+
+    private async Task LoadDatabases()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+        
+        try
+        {
+            databases = await DatabaseService.GetAllDatabasesAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading databases: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task RefreshDatabases()
+    {
+        await LoadDatabases();
+    }
+
+    private void NavigateToCreate()
+    {
+        Navigation.NavigateTo("/databases/create");
+    }
+
+    private void NavigateToTables(string databaseName)
+    {
+        Navigation.NavigateTo($"/databases/{databaseName}/tables");
+    }
+
+    private async Task SaveDatabase(string name)
+    {
+        var confirmed = await JS.InvokeAsync<bool>("confirm", $"Save database '{name}' to disk?");
+        if (!confirmed) return;
+
+        var response = await DatabaseService.SaveDatabaseAsync(name);
+        if (response.Success)
+        {
+            successMessage = response.Message ?? "Database saved successfully";
+        }
+        else
+        {
+            errorMessage = response.Message ?? "Failed to save database";
+        }
+    }
+
+    private async Task LoadDatabase(string name)
+    {
+        var confirmed = await JS.InvokeAsync<bool>("confirm", $"Load database '{name}' from disk? This will overwrite current data.");
+        if (!confirmed) return;
+
+        var response = await DatabaseService.LoadDatabaseAsync(name);
+        if (response.Success)
+        {
+            successMessage = response.Message ?? "Database loaded successfully";
+            await LoadDatabases();
+        }
+        else
+        {
+            errorMessage = response.Message ?? "Failed to load database";
+        }
+    }
+
+    private async Task DeleteDatabase(string name)
+    {
+        var confirmed = await JS.InvokeAsync<bool>("confirm", $"Are you sure you want to delete database '{name}'? This action cannot be undone.");
+        if (!confirmed) return;
+
+        var response = await DatabaseService.DeleteDatabaseAsync(name);
+        if (response.Success)
+        {
+            successMessage = response.Message ?? "Database deleted successfully";
+            await LoadDatabases();
+        }
+        else
+        {
+            errorMessage = response.Message ?? "Failed to delete database";
+        }
+    }
+}

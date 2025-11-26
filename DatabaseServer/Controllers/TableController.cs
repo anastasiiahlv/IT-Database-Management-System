@@ -20,14 +20,13 @@ namespace DatabaseServer.Controllers
         /// Створити нову таблицю
         /// </summary>
         [HttpPost]
-        public IActionResult CreateTable([FromBody] ApiDtos dto)
+        public IActionResult CreateTable([FromBody] CreateTableDto dto)
         {
             try
             {
                 var manager = _storageService.GetDatabaseManager();
                 var columns = dto.Columns.Select(c => new Column(c.Name, c.DataType)).ToList();
                 var table = manager.CreateTable(dto.TableName, columns);
-
                 return Ok(new { message = $"Таблиця '{dto.TableName}' створена", tableName = table.Name });
             }
             catch (Exception ex)

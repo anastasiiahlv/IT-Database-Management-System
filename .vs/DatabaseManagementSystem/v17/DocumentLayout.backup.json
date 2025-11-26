@@ -3,22 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databaseserver\\dtos\\apidtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|solutionrelative:databaseserver\\dtos\\apidtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databaseserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|solutionrelative:databaseserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25412BF3-302C-45E3-8AEA-0F8C8E2F3199}|DatabaseManagementSystem.BlazorUI\\DatabaseManagementSystem.BlazorUI.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasemanagementsystem.blazorui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25412BF3-302C-45E3-8AEA-0F8C8E2F3199}|DatabaseManagementSystem.BlazorUI\\DatabaseManagementSystem.BlazorUI.csproj|solutionrelative:databasemanagementsystem.blazorui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databaseserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|solutionrelative:databaseserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25412BF3-302C-45E3-8AEA-0F8C8E2F3199}|DatabaseManagementSystem.BlazorUI\\DatabaseManagementSystem.BlazorUI.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasemanagementsystem.blazorui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25412BF3-302C-45E3-8AEA-0F8C8E2F3199}|DatabaseManagementSystem.BlazorUI\\DatabaseManagementSystem.BlazorUI.csproj|solutionrelative:databasemanagementsystem.blazorui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databaseserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD079954-942B-4BD1-A589-1666A6C3A3EF}|DatabaseServer\\DatabaseServer.csproj|solutionrelative:databaseserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25412BF3-302C-45E3-8AEA-0F8C8E2F3199}|DatabaseManagementSystem.BlazorUI\\DatabaseManagementSystem.BlazorUI.csproj|c:\\users\\user\\desktop\\databasemanagementsystem\\databasemanagementsystem.blazorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25412BF3-302C-45E3-8AEA-0F8C8E2F3199}|DatabaseManagementSystem.BlazorUI\\DatabaseManagementSystem.BlazorUI.csproj|solutionrelative:databasemanagementsystem.blazorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 494,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,29 +42,101 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiDtos.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\DTOs\\ApiDtos.cs",
-              "RelativeDocumentMoniker": "DatabaseServer\\DTOs\\ApiDtos.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\DTOs\\ApiDtos.cs",
-              "RelativeToolTip": "DatabaseServer\\DTOs\\ApiDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T19:36:57.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\Program.cs",
               "RelativeDocumentMoniker": "DatabaseServer\\Program.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\Program.cs",
               "RelativeToolTip": "DatabaseServer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T19:31:19.14Z",
+              "WhenOpened": "2025-11-26T19:28:25.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\appsettings.json",
+              "RelativeDocumentMoniker": "DatabaseServer\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\appsettings.json",
+              "RelativeToolTip": "DatabaseServer\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-26T19:28:00.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DatabaseServer\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseServer\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DatabaseServer\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-26T19:27:49.732Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\Program.cs",
+              "RelativeDocumentMoniker": "DatabaseManagementSystem.BlazorUI\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\Program.cs",
+              "RelativeToolTip": "DatabaseManagementSystem.BlazorUI\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T20:58:20.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\appsettings.json",
+              "RelativeDocumentMoniker": "DatabaseManagementSystem.BlazorUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\appsettings.json",
+              "RelativeToolTip": "DatabaseManagementSystem.BlazorUI\\appsettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T20:58:03.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DatabaseManagementSystem.BlazorUI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\DatabaseManagementSystem\\DatabaseManagementSystem.BlazorUI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DatabaseManagementSystem.BlazorUI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-26T19:26:02.784Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 150,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 78,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9a7cebbb-dc5c-4986-bc49-962da46aa506}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
